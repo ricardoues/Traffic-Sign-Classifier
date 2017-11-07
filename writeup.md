@@ -51,7 +51,7 @@ signs data set:
 * The shape of a traffic sign image is (32, 32, 3) 
 * The number of unique classes/labels in the data set is 43
 
-####2. Include an exploratory visualization of the dataset.
+#### 2. Include an exploratory visualization of the dataset.
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
 
