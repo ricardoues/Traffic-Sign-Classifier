@@ -93,11 +93,11 @@ My final model consisted of the following layers:
 | Convolution 5x5	    | 1x1 stride, valid padding, outputs  10x10x6   |
 | RELU					|												|
 | Max pooling	      	| 2x2 stride,  outputs 14x14x64 				|
-| Fully connected		|        									|
+| Fully connected		|   input = 400, output = 120     									|
 | RELU					|												|
-| Fully connected		|         									|
+| Fully connected		|   input = 120, output = 84     			|
 | RELU					|												|
-| Dropout					|												|
+| Dropout					|			keep_prob = 0.25									|
 | Output layer				|         									|
 
 
