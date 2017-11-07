@@ -53,9 +53,11 @@ signs data set:
 
 #### 2. Include an exploratory visualization of the dataset.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
+Here is an exploratory visualization of the data set. It is a bar chart showing how the frequency of the labels are distribuited in the range between 20 and 39.
 
 ![alt text][image1]
+
+It seems that some labels are more frequent than others in the training set, so that this is an unbalanced classification problem. 
 
 ###Design and Test a Model Architecture
 
