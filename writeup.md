@@ -80,6 +80,8 @@ To add more data to the the data set, I used oversampling because it is easy to 
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
+First of all, I used LeNet architecture with some minor modifications. The Lenet architecture shows overfitting that is why we need to use dropout to improve the generalization of the model. 
+
 My final model consisted of the following layers:
 
 | Layer         		|     Description	        					| 
