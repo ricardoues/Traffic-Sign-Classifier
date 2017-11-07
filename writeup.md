@@ -71,17 +71,11 @@ Here is an example of a traffic sign image before and after grayscaling.
 
 ![alt text][image2]
 
-As a last step, I normalized the image data because ...
+As a last step, I normalized the image data in order to avoid problems with numerical precision. 
 
-I decided to generate additional data because ... 
+I decided to generate additional data because the data is unbalanced. 
 
-To add more data to the the data set, I used the following techniques because ... 
-
-Here is an example of an original image and an augmented image:
-
-![alt text][image3]
-
-The difference between the original data set and the augmented data set is the following ... 
+To add more data to the the data set, I used oversampling because it is easy to implement but can increase the learning time. Since that stochastic gradient is used the learning time is not a problem. Other techniques can be used to treat with unbalanced classification problems, such as: modified the cost function, generate augmented data, and so on.  
 
 
 ####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
