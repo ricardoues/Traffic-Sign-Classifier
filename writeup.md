@@ -91,15 +91,17 @@ My final model consisted of the following layers:
 | RELU					|												|
 | Max pooling	      	| 2x2 stride,  outputs 14x14x64 				|
 | Convolution 5x5	    | 1x1 stride, valid padding, outputs  10x10x6   |
+| RELU					|												|
+| Max pooling	      	| 2x2 stride,  outputs 14x14x64 				|
+| Fully connected		|        									|
+| RELU					|												|
+| Fully connected		|         									|
+| RELU					|												|
+| Dropout					|												|
+| Output layer				|         									|
 
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
- 
 
-
-####3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
+#### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
 To train the model, I used an ....
 
