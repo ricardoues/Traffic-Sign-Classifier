@@ -75,10 +75,10 @@ As a last step, I normalized the image data in order to avoid problems with nume
 
 I decided to generate additional data because the data is unbalanced. 
 
-To add more data to the the data set, I used oversampling because it is easy to implement but can increase the learning time. As Adam Optimizer (A variant of stochastic gradient descent) was used, the learning time was not a problem. Other techniques can be used to treat with unbalanced classification problems, such as: modified the cost function, generate augmented data, and so on.  
+To add more data to the the data set, I used oversampling because it is easy to implement but can increase the learning time. As Adam Optimizer (A variant of stochastic gradient descent) was used, the learning time was not a problem. Other techniques can be used to treat with unbalanced classification problems, such as: modified the cost function, generate augmented data using generative adversial models, and so on.  
 
 
-####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
+#### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
 My final model consisted of the following layers:
 
