@@ -186,33 +186,40 @@ the image does contain a Speed limit (70km/h) sign. The top five soft max probab
 
 
 For the third image, the model is completely sure that is a Yield sign (probability of 1.00000000e+00 !!), and 
-the image does contain a Yield sign. The Yield sign have a simple pattern that is the reason of this value of probability. The top five soft max probabilities were
+the image does contain a Yield sign. The Yield sign have a simple pattern that is why the model gives high value of probability. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 1.0        			| Speed limit (70km/h)    									| 
-|    				|  Speed limit (120km/h)										|
-| 				| 	Speed limit (30km/h)									|
-| 5.35637327e-03     			| 			Speed limit (50km/h)	 				|
-| 4.99302623e-05			    |    Speed limit (80km/h)  							|
+| 1.00000000e+00        			| Yield    									| 
+| 1.24625038e-21   				|  No vehicles									|
+| 2.98008868e-23				| 	Speed limit (60km/h)									|
+| 4.12624183e-28     			| 			Speed limit (80km/h)				|
+| 	7.38018582e-29		    |    Ahead only 							|
 
 
+For the fourth image, the model is completely sure that is a General Caution (probability of 9.51410234e-01), and 
+the image does contain a General Caution sign. The top five soft max probabilities were
 
-TopKV2(values=array([
-       [  1.00000000e+00,   1.24625038e-21,   2.98008868e-23,
-          4.12624183e-28,   7.38018582e-29],
-       [  9.51410234e-01,   4.79275174e-02,   6.56011689e-04,
-          6.07826451e-06,   1.47831400e-07],
-       [  9.93026018e-01,   2.80808611e-03,   1.72838150e-03,
-          6.55918906e-04,   6.21806248e-04]], dtype=float32), indices=array(       
-       [13, 15,  3,  5, 35],
-       [18, 26, 24, 27, 20],
-       [12, 40, 32, 38, 41]], dtype=int32))
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 9.51410234e-01        			| General Caution    									| 
+| 4.79275174e-02  				|  				Traffic signals					|
+| 6.56011689e-04			| 			Road narrows on the right							|
+| 6.07826451e-06     			| 			Pedestrians				|
+| 	1.47831400e-07	    |    			Dangerous curve to the right				|
+
+For the fifth image, the model is completely sure that is a Priority road (probability of 9.93026018e-01), and 
+the image does contain a Priority road sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+|   9.93026018e-01      			| Priority road   									| 
+|   2.80808611e-03				|  				Roundabout mandatory				|
+| 	1.72838150e-03	| 		End of all speed and passing limits						|
+|  6.55918906e-04   			| 			Keep right				|
+|  6.21806248e-04   |    			End of no passing			|
 
 
-
-
-For the second image ... 
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
