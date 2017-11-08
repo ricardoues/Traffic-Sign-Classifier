@@ -126,7 +126,7 @@ With the LeNet architecture with dropout, three models were proposed. The accura
 
 
 The model with better performance in the validation set is the model 2 with LeNet architecture and dropout equal 
-0.25, it is the model that we choose to predict new images. Finally, the accuracy of this model in the test set is the highest among all models. It is possible to use a more sophisticated method such as cross validation but due to time restrictions 
+0.25, it is the model that we choose to predict new images. Finally, the accuracy of this model in the test set is the highest among all models. 
 
 
 My final model results were:
@@ -137,7 +137,7 @@ My final model results were:
 If a well known architecture was chosen:
 * What architecture was chosen? LeNet architecture was chosen.
 * Why did you believe it would be relevant to the traffic sign application? The LeNet architecture is a good choice since it is straightforward and small. Moreover, with Lenet we have achieved extremly fast training times.  
-* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well? The estimation of the accuracy on the training, validation and test set are very stable, we have proved these architecture three times and the results were very similar to those shown in the table above.  
+* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well? The estimation of the accuracy on the training, validation and test set are very stable, we have proved these architecture three times and the results were very similar to those shown in the table above. It is possible to use a more sophisticated method such as cross validation but due to time restrictions, it was not possible.  
  
 
 ###Test a Model on New Images
