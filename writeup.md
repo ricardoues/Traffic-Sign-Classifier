@@ -185,8 +185,16 @@ the image does contain a Speed limit (70km/h) sign. The top five soft max probab
 | 4.99302623e-05			    |    Speed limit (80km/h)  							|
 
 
-For the third image, the model is completely sure that is a Speed limit (70km/h) sign (probability of 9.63142693e-01), and 
-the image does contain a Speed limit (70km/h) sign. The top five soft max probabilities were
+For the third image, the model is completely sure that is a Yield sign (probability of 1.0!!), and 
+the image does contain a Yield sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.0        			| Speed limit (70km/h)    									| 
+|    				|  Speed limit (120km/h)										|
+| 				| 	Speed limit (30km/h)									|
+| 5.35637327e-03     			| 			Speed limit (50km/h)	 				|
+| 4.99302623e-05			    |    Speed limit (80km/h)  							|
 
 
 
