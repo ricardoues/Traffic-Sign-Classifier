@@ -73,9 +73,7 @@ Here is an example of a traffic sign image before and after grayscaling.
 
 As a last step, I normalized the image data in order to avoid problems with numerical precision. 
 
-I decided to generate additional data because the data is unbalanced. 
-
-To add more data to the the data set, I used oversampling because it is easy to implement but can increase the learning time. As Adam Optimizer (A variant of stochastic gradient descent) was used, the learning time was not a problem. Other techniques can be used to treat with unbalanced classification problems, such as: modified the cost function, generate augmented data using generative adversial models, and so on.  
+I decided to generate additional data because the data is unbalanced. To add more data to the the data set, I used oversampling because it is easy to implement but can increase the learning time. As Adam Optimizer (A variant of stochastic gradient descent) was used, the learning time was not a problem. Other techniques can be used to treat with unbalanced classification problems, such as: modified the cost function, generate augmented data using generative adversial models, and so on.  
 
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
@@ -103,14 +101,38 @@ My final model consisted of the following layers:
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-To train the model, I used an Adam optimizer to update networks weights iterative based in training data. Among the advantages of using Adam optimizer are computationally efficient, little memory requirements, well suited for problems that are large in terms of data and/or parameters, and hyperparameteres require little tuning. 
+To train the model, I used Adam optimizer to update networks weights iterative based in training data. Among the advantages of using Adam optimizer are computationally efficient, little memory requirements, well suited for problems that are large in terms of data and/or parameters, and hyperparameteres require little tuning. 
 
-####4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
+Trial and error approach was used to select the following parameters in the training phase: learning rate = 0.001, number of epochs = 10, batch size = 128 , and dropout = 0.25. The LeNet architecture without dropout shows 
+
+#### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
+
+Firstly, we have proposed two models using the LeNet architecture. The first model has the following hyperparameters: rate 0.001, epochs 10, and batch size of 128. The second model has a rate of 0.001, an epochs of 100, and a batch size of 256. The accuracy of these models on the train, validation and test set are as follows:
+
+| Model   | Train accuracy | Valid accuracy | Test accuracy |
+|---------|----------------|----------------|---------------|
+| Model 1 | 0.988          | 0.895          | 0.881         |
+| Model 2 | 1.0            | 0.932          | 0.923         |
+
+It is clear that with the LeNet architecture, we have obtained overfitting models that is why we are going to modify the LeNet code to include dropout.
+
+With the LeNet architecture with dropout, three models were proposed. The accuracy of these models on the train, validation and test set are as follows:
+
+| Model                     | Train accuracy | Valid accuracy | Test accuracy |
+|---------------------------|----------------|----------------|---------------|
+| Model 1 (dropout = 0.5)   | 0.998          | 0.929          | 0.921         |
+| Model 2 (dropout = 0.25)  | 0.998          | 0.950          | 0.931         |
+| Model 3 (dropout = 0.5)   | 0.990          | 0.932          | 0.905         |
+
+
+The model with better performance in the validation set is the model 2 with LeNet architecture and dropout equal 
+0.25, it is the model that we choose to predict new images. Finally, the accuracy of this model in the test set is the highest among all models. 
+
 
 My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
+* training set accuracy of 0.998
+* validation set accuracy of 0.950 
+* test set accuracy of 0.931
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
