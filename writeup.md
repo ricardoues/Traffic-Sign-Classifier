@@ -185,8 +185,8 @@ the image does contain a Speed limit (70km/h) sign. The top five soft max probab
 | 4.99302623e-05			    |    Speed limit (80km/h)  							|
 
 
-For the third image, the model is completely sure that is a Yield sign (probability of 1.0!!), and 
-the image does contain a Yield sign. The top five soft max probabilities were
+For the third image, the model is completely sure that is a Yield sign (probability of 1.00000000e+00 !!), and 
+the image does contain a Yield sign. The Yield sign have a simple pattern that is the reason of this value of probability. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
