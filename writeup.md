@@ -162,15 +162,46 @@ The model was able to correctly guess 5 of the 5 traffic signs, which gives an a
 
 The code for making predictions on my final model is located in the 95th cell of the Ipython notebook.
 
-For the first image, the model is completely sure that this is a Speed limit (30km/h) (probability of 0.99944669), and the image does contain a Speed limit (30km/h) sign. The top five soft max probabilities were
+For the first image, the model is completely sure that this is a Speed limit (30km/h) sign (probability of 9.99446690e-01), and the image does contain a Speed limit (30km/h) sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| 9.99446690e-01        			| Speed limit (30km/h)    									| 
+| 4.94337175e-04    				|  Speed limit (20km/h)										|
+| 3.84170671e-05					| 	Speed limit (50km/h)									|
+| 2.05533906e-05      			| 		Speed limit (70km/h)		 				|
+| 5.61166331e-08			    |  Speed limit (120km/h)    							|
+
+
+For the second image, the model is completely sure that is a Speed limit (70km/h) sign (probability of 9.63142693e-01), and 
+the image does contain a Speed limit (70km/h) sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 9.63142693e-01        			| Speed limit (70km/h)    									| 
+| 2.17354931e-02   				|  Speed limit (120km/h)										|
+| 9.65417735e-03				| 	Speed limit (30km/h)									|
+| 5.35637327e-03     			| 			Speed limit (50km/h)	 				|
+| 4.99302623e-05			    |    Speed limit (80km/h)  							|
+
+
+For the third image, the model is completely sure that is a Speed limit (70km/h) sign (probability of 9.63142693e-01), and 
+the image does contain a Speed limit (70km/h) sign. The top five soft max probabilities were
+
+
+
+TopKV2(values=array([
+       [  1.00000000e+00,   1.24625038e-21,   2.98008868e-23,
+          4.12624183e-28,   7.38018582e-29],
+       [  9.51410234e-01,   4.79275174e-02,   6.56011689e-04,
+          6.07826451e-06,   1.47831400e-07],
+       [  9.93026018e-01,   2.80808611e-03,   1.72838150e-03,
+          6.55918906e-04,   6.21806248e-04]], dtype=float32), indices=array(       
+       [13, 15,  3,  5, 35],
+       [18, 26, 24, 27, 20],
+       [12, 40, 32, 38, 41]], dtype=int32))
+
+
 
 
 For the second image ... 
