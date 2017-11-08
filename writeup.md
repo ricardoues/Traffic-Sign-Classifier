@@ -126,7 +126,7 @@ With the LeNet architecture with dropout, three models were proposed. The accura
 
 
 The model with better performance in the validation set is the model 2 with LeNet architecture and dropout equal 
-0.25, it is the model that we choose to predict new images. Finally, the accuracy of this model in the test set is the highest among all models. 
+0.25, it is the model that we choose to predict new images. Finally, the accuracy of this model in the test set is the highest among all models. It is possible to use a more sophisticated method such as cross validation but due to time restrictions 
 
 
 My final model results were:
