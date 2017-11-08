@@ -134,17 +134,10 @@ My final model results were:
 * validation set accuracy of 0.950 
 * test set accuracy of 0.931
 
-If an iterative approach was chosen:
-* What was the first architecture that was tried and why was it chosen?
-* What were some problems with the initial architecture?
-* How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
-* Which parameters were tuned? How were they adjusted and why?
-* What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
-
 If a well known architecture was chosen:
-* What architecture was chosen?
-* Why did you believe it would be relevant to the traffic sign application?
-* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
+* What architecture was chosen? LeNet architecture was chosen.
+* Why did you believe it would be relevant to the traffic sign application? The LeNet architecture is a good choice since it is straightforward and small. Moreover, with Lenet we have achieved extremly fast training times.  
+* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well? The estimation of the accuracy on the training, validation and test set are very stable, we have proved these architecture three times and the results were very similar to those shown in the table above.  
  
 
 ###Test a Model on New Images
