@@ -21,12 +21,11 @@ The goals / steps of this project are the following:
 
 [image1]: ./images/bar_graph.png "Visualization"
 [image2]: ./images/traffic_sign01.png "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
+[image3]: ./images/traffic_sign02.png "Traffic Sign 1"
+[image4]: ./images/traffic_sign03.png "Traffic Sign 2"
+[image5]: ./images/traffic_sign04.png "Traffic Sign 3"
+[image6]: ./images/traffic_sign05.png "Traffic Sign 4"
+[image7]: ./images/traffic_sign06.png "Traffic Sign 5"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -146,8 +145,8 @@ If a well known architecture was chosen:
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![alt text][image3] ![alt text][image4] ![alt text][image5] 
+![alt text][image6] ![alt text][image7]
 
 The first image might be difficult to classify because ...
 
